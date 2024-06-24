@@ -68,6 +68,7 @@ extension HomeScreenVC: UITableViewDelegate, UITableViewDataSource{
 extension HomeScreenVC: PostFeedDelegate {
     func didTapDescription(postData: [String : Any]) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "PostDetailsVC") as! PostDetailsVC
+        vc.postData = postData
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

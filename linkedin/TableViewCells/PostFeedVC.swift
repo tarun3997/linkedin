@@ -36,8 +36,8 @@ class PostFeedVC: UITableViewCell {
     @IBAction func actLike(_ sender: UIButton) {
         
         isLiked ? likeOutlet.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal) : likeOutlet.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
-       
-                isLiked.toggle()
+
+        isLiked.toggle()
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -53,8 +53,6 @@ class PostFeedVC: UITableViewCell {
         }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     
