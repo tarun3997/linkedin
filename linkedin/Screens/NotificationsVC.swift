@@ -12,13 +12,13 @@ class NotificationsVC: UIViewController {
     let NotificationData: [[String:Any]] = [
         [
         "UserImage": "Image-1",
-        "UserName" : "Shah Rukh Khan: Kajol like your post",
+        "UserName" : "Shah Rukh Khan: Kajol like your post and commented on your post",
         "MessageTime": "2hr",
     
     ],
         [
         "UserImage": "Image-2",
-        "UserName" : "Nora fathehi: sohil comment on your post",
+        "UserName" : "Noora Fathehi: sohil khan comment on your post",
         "MessageTime": "1hr",
     
     ],

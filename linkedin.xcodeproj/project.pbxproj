@@ -7,29 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5640E6822C37AF9400102847 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5640E6812C37AF9400102847 /* GoogleService-Info.plist */; };
 		567E66E12C194C280075AD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E66E02C194C280075AD94 /* AppDelegate.swift */; };
 		567E66E32C194C280075AD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E66E22C194C280075AD94 /* SceneDelegate.swift */; };
 		567E66E52C194C280075AD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E66E42C194C280075AD94 /* ViewController.swift */; };
-		567E66E82C194C280075AD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567E66E62C194C280075AD94 /* Main.storyboard */; };
+		567E66E82C194C280075AD94 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567E66E62C194C280075AD94 /* Notification.storyboard */; };
 		567E66EA2C194C290075AD94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567E66E92C194C290075AD94 /* Assets.xcassets */; };
 		567E66ED2C194C290075AD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567E66EB2C194C290075AD94 /* LaunchScreen.storyboard */; };
 		567E66F62C1955070075AD94 /* NotificationLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E66F42C1955070075AD94 /* NotificationLists.swift */; };
 		567E66F72C1955070075AD94 /* NotificationLists.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567E66F52C1955070075AD94 /* NotificationLists.xib */; };
 		5680C7222C195EC900AD9FD0 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5680C7212C195EC900AD9FD0 /* NotificationsVC.swift */; };
+		569239292C1BF6D00019FA65 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569239282C1BF6D00019FA65 /* EditProfileVC.swift */; };
+		5692392B2C1BFB370019FA65 /* ApplyFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5692392A2C1BFB370019FA65 /* ApplyFormVC.swift */; };
+		56E3214C2C2D2A9B0082C7A8 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E3214B2C2D2A9B0082C7A8 /* model.swift */; };
+		D973FDB2D69F95F1A7F571B6 /* Pods_linkedin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0096157FB94281338BCF79C9 /* Pods_linkedin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0096157FB94281338BCF79C9 /* Pods_linkedin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_linkedin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5640E6812C37AF9400102847 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		567E66DD2C194C280075AD94 /* linkedin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = linkedin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		567E66E02C194C280075AD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		567E66E02C194C280075AD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		567E66E22C194C280075AD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		567E66E42C194C280075AD94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		567E66E72C194C280075AD94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		567E66E72C194C280075AD94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notification.storyboard; sourceTree = "<group>"; };
 		567E66E92C194C290075AD94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		567E66EC2C194C290075AD94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		567E66EE2C194C290075AD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		567E66F42C1955070075AD94 /* NotificationLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLists.swift; sourceTree = "<group>"; };
 		567E66F52C1955070075AD94 /* NotificationLists.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationLists.xib; sourceTree = "<group>"; };
 		5680C7212C195EC900AD9FD0 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		569239282C1BF6D00019FA65 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		5692392A2C1BFB370019FA65 /* ApplyFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyFormVC.swift; sourceTree = "<group>"; };
+		56E3214B2C2D2A9B0082C7A8 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		728E9892BFC2F51394FDE1FD /* Pods-linkedin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linkedin.release.xcconfig"; path = "Target Support Files/Pods-linkedin/Pods-linkedin.release.xcconfig"; sourceTree = "<group>"; };
+		7DC12AF2049ACD5C23C9C580 /* Pods-linkedin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linkedin.debug.xcconfig"; path = "Target Support Files/Pods-linkedin/Pods-linkedin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D973FDB2D69F95F1A7F571B6 /* Pods_linkedin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5640E67E2C37A80800102847 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56E3214B2C2D2A9B0082C7A8 /* model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		567E66D42C194C280075AD94 = {
 			isa = PBXGroup;
 			children = (
 				567E66DF2C194C280075AD94 /* linkedin */,
 				567E66DE2C194C280075AD94 /* Products */,
+				6F9F60E2E764CB9D6C06028A /* Pods */,
+				BCAAA967D9C93F91AEF6A802 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +85,14 @@
 		567E66DF2C194C280075AD94 /* linkedin */ = {
 			isa = PBXGroup;
 			children = (
+				5640E6812C37AF9400102847 /* GoogleService-Info.plist */,
+				5640E67E2C37A80800102847 /* Models */,
 				5680C7232C195ED600AD9FD0 /* TableViewCells */,
 				5680C7202C195E4700AD9FD0 /* Screens */,
 				567E66E02C194C280075AD94 /* AppDelegate.swift */,
 				567E66E22C194C280075AD94 /* SceneDelegate.swift */,
 				567E66E42C194C280075AD94 /* ViewController.swift */,
-				567E66E62C194C280075AD94 /* Main.storyboard */,
+				567E66E62C194C280075AD94 /* Notification.storyboard */,
 				567E66E92C194C290075AD94 /* Assets.xcassets */,
 				567E66EB2C194C290075AD94 /* LaunchScreen.storyboard */,
 				567E66EE2C194C290075AD94 /* Info.plist */,
@@ -79,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				5680C7212C195EC900AD9FD0 /* NotificationsVC.swift */,
+				569239282C1BF6D00019FA65 /* EditProfileVC.swift */,
+				5692392A2C1BFB370019FA65 /* ApplyFormVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -92,6 +119,23 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		6F9F60E2E764CB9D6C06028A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DC12AF2049ACD5C23C9C580 /* Pods-linkedin.debug.xcconfig */,
+				728E9892BFC2F51394FDE1FD /* Pods-linkedin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BCAAA967D9C93F91AEF6A802 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0096157FB94281338BCF79C9 /* Pods_linkedin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 567E66F12C194C290075AD94 /* Build configuration list for PBXNativeTarget "linkedin" */;
 			buildPhases = (
+				5C31773B1C961A901016ED5B /* [CP] Check Pods Manifest.lock */,
 				567E66D92C194C280075AD94 /* Sources */,
 				567E66DA2C194C280075AD94 /* Frameworks */,
 				567E66DB2C194C280075AD94 /* Resources */,
+				14B939EBEB9136D9A0D7064A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,35 +198,81 @@
 			files = (
 				567E66F72C1955070075AD94 /* NotificationLists.xib in Resources */,
 				567E66ED2C194C290075AD94 /* LaunchScreen.storyboard in Resources */,
+				5640E6822C37AF9400102847 /* GoogleService-Info.plist in Resources */,
 				567E66EA2C194C290075AD94 /* Assets.xcassets in Resources */,
-				567E66E82C194C280075AD94 /* Main.storyboard in Resources */,
+				567E66E82C194C280075AD94 /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B939EBEB9136D9A0D7064A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-linkedin/Pods-linkedin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-linkedin/Pods-linkedin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-linkedin/Pods-linkedin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C31773B1C961A901016ED5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-linkedin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		567E66D92C194C280075AD94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5692392B2C1BFB370019FA65 /* ApplyFormVC.swift in Sources */,
 				567E66F62C1955070075AD94 /* NotificationLists.swift in Sources */,
 				5680C7222C195EC900AD9FD0 /* NotificationsVC.swift in Sources */,
 				567E66E52C194C280075AD94 /* ViewController.swift in Sources */,
 				567E66E12C194C280075AD94 /* AppDelegate.swift in Sources */,
+				569239292C1BF6D00019FA65 /* EditProfileVC.swift in Sources */,
 				567E66E32C194C280075AD94 /* SceneDelegate.swift in Sources */,
+				56E3214C2C2D2A9B0082C7A8 /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		567E66E62C194C280075AD94 /* Main.storyboard */ = {
+		567E66E62C194C280075AD94 /* Notification.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				567E66E72C194C280075AD94 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Notification.storyboard;
 			sourceTree = "<group>";
 		};
 		567E66EB2C194C290075AD94 /* LaunchScreen.storyboard */ = {
@@ -310,6 +402,7 @@
 		};
 		567E66F22C194C290075AD94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DC12AF2049ACD5C23C9C580 /* Pods-linkedin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,7 +412,7 @@
 				INFOPLIST_FILE = linkedin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Notification;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,6 +430,7 @@
 		};
 		567E66F32C194C290075AD94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728E9892BFC2F51394FDE1FD /* Pods-linkedin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,7 +440,7 @@
 				INFOPLIST_FILE = linkedin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Notification;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
