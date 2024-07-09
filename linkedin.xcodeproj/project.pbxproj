@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220381CB2C1D4B42000402AF /* Network_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220381CA2C1D4B42000402AF /* Network_VC.swift */; };
+		220381CF2C1D8717000402AF /* Roundsimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220381CE2C1D8717000402AF /* Roundsimage.swift */; };
 		220757572C198C4E00BBCA58 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220757562C198C4E00BBCA58 /* ProfileVC.swift */; };
+		221273062C1AB5F00072D840 /* ProfilefieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221273042C1AB5F00072D840 /* ProfilefieldTableViewCell.swift */; };
+		221273072C1AB5F00072D840 /* ProfilefieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221273052C1AB5F00072D840 /* ProfilefieldTableViewCell.xib */; };
+		2232F3C62C38EE3A00E99C66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2232F3C52C38EE3A00E99C66 /* GoogleService-Info.plist */; };
 		229A09732C194C4A002906E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A09722C194C4A002906E7 /* AppDelegate.swift */; };
 		229A09752C194C4A002906E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A09742C194C4A002906E7 /* SceneDelegate.swift */; };
-		229A09772C194C4A002906E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A09762C194C4A002906E7 /* ViewController.swift */; };
-		229A097A2C194C4A002906E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229A09782C194C4A002906E7 /* Main.storyboard */; };
+		229A097A2C194C4A002906E7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229A09782C194C4A002906E7 /* Profile.storyboard */; };
 		229A097C2C194C4C002906E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229A097B2C194C4C002906E7 /* Assets.xcassets */; };
 		229A097F2C194C4C002906E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229A097D2C194C4C002906E7 /* LaunchScreen.storyboard */; };
+		22F858BF2C2178E5007E0AC8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F858BD2C2178E5007E0AC8 /* CollectionViewCell.swift */; };
+		22F858C02C2178E5007E0AC8 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F858BE2C2178E5007E0AC8 /* CollectionViewCell.xib */; };
+		22FA55042C2D1E6E004DE0EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA55032C2D1E6E004DE0EC /* Model.swift */; };
+		22FCF5FD2C2C087200E5AF89 /* roundbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FCF5FC2C2C087200E5AF89 /* roundbutton.swift */; };
+		59166C01E64AC6548ECF8AAF /* Pods_linkedin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CF0A3624F25E2540285A42 /* Pods_linkedin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00CF0A3624F25E2540285A42 /* Pods_linkedin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_linkedin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0196D7681FB26807FF66F3A1 /* Pods-linkedin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linkedin.release.xcconfig"; path = "Target Support Files/Pods-linkedin/Pods-linkedin.release.xcconfig"; sourceTree = "<group>"; };
+		220381CA2C1D4B42000402AF /* Network_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_VC.swift; sourceTree = "<group>"; };
+		220381CE2C1D8717000402AF /* Roundsimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roundsimage.swift; sourceTree = "<group>"; };
 		220757562C198C4E00BBCA58 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		221273042C1AB5F00072D840 /* ProfilefieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilefieldTableViewCell.swift; sourceTree = "<group>"; };
+		221273052C1AB5F00072D840 /* ProfilefieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilefieldTableViewCell.xib; sourceTree = "<group>"; };
+		2232F3C52C38EE3A00E99C66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		229A096F2C194C4A002906E7 /* linkedin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = linkedin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		229A09722C194C4A002906E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229A09742C194C4A002906E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		229A09762C194C4A002906E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		229A09792C194C4A002906E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		229A09792C194C4A002906E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		229A097B2C194C4C002906E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229A097E2C194C4C002906E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229A09802C194C4C002906E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F858BD2C2178E5007E0AC8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		22F858BE2C2178E5007E0AC8 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		22FA55032C2D1E6E004DE0EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		22FCF5FC2C2C087200E5AF89 /* roundbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundbutton.swift; sourceTree = "<group>"; };
+		2D8E9AB81ED81BA26BC1FA12 /* Pods-linkedin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linkedin.debug.xcconfig"; path = "Target Support Files/Pods-linkedin/Pods-linkedin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59166C01E64AC6548ECF8AAF /* Pods_linkedin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +65,8 @@
 			children = (
 				229A09712C194C4A002906E7 /* linkedin */,
 				229A09702C194C4A002906E7 /* Products */,
+				FF254EF388E8C9BF2B4769C6 /* Pods */,
+				41BA11AFCCBD600298A917A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +81,18 @@
 		229A09712C194C4A002906E7 /* linkedin */ = {
 			isa = PBXGroup;
 			children = (
+				2232F3C52C38EE3A00E99C66 /* GoogleService-Info.plist */,
 				22D3BDF02C195D5D0066CAF0 /* Screen */,
 				229A09722C194C4A002906E7 /* AppDelegate.swift */,
 				229A09742C194C4A002906E7 /* SceneDelegate.swift */,
-				229A09762C194C4A002906E7 /* ViewController.swift */,
-				229A09782C194C4A002906E7 /* Main.storyboard */,
+				229A09782C194C4A002906E7 /* Profile.storyboard */,
 				229A097B2C194C4C002906E7 /* Assets.xcassets */,
 				229A097D2C194C4C002906E7 /* LaunchScreen.storyboard */,
 				229A09802C194C4C002906E7 /* Info.plist */,
+				221273042C1AB5F00072D840 /* ProfilefieldTableViewCell.swift */,
+				221273052C1AB5F00072D840 /* ProfilefieldTableViewCell.xib */,
+				220381CE2C1D8717000402AF /* Roundsimage.swift */,
+				22FCF5FC2C2C087200E5AF89 /* roundbutton.swift */,
 			);
 			path = linkedin;
 			sourceTree = "<group>";
@@ -73,9 +100,30 @@
 		22D3BDF02C195D5D0066CAF0 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				220381CA2C1D4B42000402AF /* Network_VC.swift */,
 				220757562C198C4E00BBCA58 /* ProfileVC.swift */,
+				22F858BD2C2178E5007E0AC8 /* CollectionViewCell.swift */,
+				22F858BE2C2178E5007E0AC8 /* CollectionViewCell.xib */,
+				22FA55032C2D1E6E004DE0EC /* Model.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		41BA11AFCCBD600298A917A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CF0A3624F25E2540285A42 /* Pods_linkedin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF254EF388E8C9BF2B4769C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E9AB81ED81BA26BC1FA12 /* Pods-linkedin.debug.xcconfig */,
+				0196D7681FB26807FF66F3A1 /* Pods-linkedin.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 229A09832C194C4C002906E7 /* Build configuration list for PBXNativeTarget "linkedin" */;
 			buildPhases = (
+				EBD98061E5D1C5B15CBA6316 /* [CP] Check Pods Manifest.lock */,
 				229A096B2C194C4A002906E7 /* Sources */,
 				229A096C2C194C4A002906E7 /* Frameworks */,
 				229A096D2C194C4A002906E7 /* Resources */,
+				1F3202DBCD9418D594B3518A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,33 +188,83 @@
 			files = (
 				229A097F2C194C4C002906E7 /* LaunchScreen.storyboard in Resources */,
 				229A097C2C194C4C002906E7 /* Assets.xcassets in Resources */,
-				229A097A2C194C4A002906E7 /* Main.storyboard in Resources */,
+				221273072C1AB5F00072D840 /* ProfilefieldTableViewCell.xib in Resources */,
+				229A097A2C194C4A002906E7 /* Profile.storyboard in Resources */,
+				22F858C02C2178E5007E0AC8 /* CollectionViewCell.xib in Resources */,
+				2232F3C62C38EE3A00E99C66 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F3202DBCD9418D594B3518A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-linkedin/Pods-linkedin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-linkedin/Pods-linkedin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-linkedin/Pods-linkedin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD98061E5D1C5B15CBA6316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-linkedin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		229A096B2C194C4A002906E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FA55042C2D1E6E004DE0EC /* Model.swift in Sources */,
+				22FCF5FD2C2C087200E5AF89 /* roundbutton.swift in Sources */,
 				220757572C198C4E00BBCA58 /* ProfileVC.swift in Sources */,
-				229A09772C194C4A002906E7 /* ViewController.swift in Sources */,
 				229A09732C194C4A002906E7 /* AppDelegate.swift in Sources */,
+				221273062C1AB5F00072D840 /* ProfilefieldTableViewCell.swift in Sources */,
+				22F858BF2C2178E5007E0AC8 /* CollectionViewCell.swift in Sources */,
 				229A09752C194C4A002906E7 /* SceneDelegate.swift in Sources */,
+				220381CF2C1D8717000402AF /* Roundsimage.swift in Sources */,
+				220381CB2C1D4B42000402AF /* Network_VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		229A09782C194C4A002906E7 /* Main.storyboard */ = {
+		229A09782C194C4A002906E7 /* Profile.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				229A09792C194C4A002906E7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 		229A097D2C194C4C002906E7 /* LaunchScreen.storyboard */ = {
@@ -296,6 +396,7 @@
 		};
 		229A09842C194C4C002906E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8E9AB81ED81BA26BC1FA12 /* Pods-linkedin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,7 +406,7 @@
 				INFOPLIST_FILE = linkedin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +424,7 @@
 		};
 		229A09852C194C4C002906E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0196D7681FB26807FF66F3A1 /* Pods-linkedin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,7 +434,7 @@
 				INFOPLIST_FILE = linkedin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
