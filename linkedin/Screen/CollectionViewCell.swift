@@ -1,39 +1,39 @@
-//
-//  CollectionViewCell.swift
-//  linkedin
-//
-//  Created by Apple 3 on 18/06/24.
-//
-
 import UIKit
+import Kingfisher
 
 class CollectionViewCell: UICollectionViewCell {
 
     var isFollowing = false
 
-    @IBOutlet weak var Ranveer: UIImageView!
-    @IBOutlet weak var pname: UILabel!
-    @IBOutlet weak var jobprofession: UILabel!
-    @IBOutlet weak var bprofile: UILabel!
-    @IBOutlet weak var followbtn: UIButton!
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var jobLabel: UILabel!
+    @IBOutlet weak var bprofileLabel: UILabel!
+    @IBOutlet weak var followButton: UIButton!
     
-    
-    @IBAction func follow(_ sender: UIButton) {
-        
-    isFollowing.toggle()
-        updateFollowButtonUI()
-    
-    }
     override func awakeFromNib() {
-        
         super.awakeFromNib()
         updateFollowButtonUI()
     }
+    
+    func configure(with imageUrl: String, name: String, job: String, bprofile: String) {
+        // Load image from URL using Kingfisher
+        if let url = URL(string: imageUrl) {
+            profileImageView.kf.setImage(with: url)
+        }
+        nameLabel.text = name
+        jobLabel.text = job
+        bprofileLabel.text = bprofile
+    }
 
+    @IBAction func follow(_ sender: UIButton) {
+        isFollowing.toggle()
+        updateFollowButtonUI()
+        // You can add follow/unfollow logic here if needed
+    }
+    
     func updateFollowButtonUI() {
         let followTitle = isFollowing ? "Following" : "Follow"
-        followbtn.setTitle(followTitle, for: .normal)
+        followButton.setTitle(followTitle, for: .normal)
     }
 }
-
- 

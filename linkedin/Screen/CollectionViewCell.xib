@@ -46,29 +46,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ranveer.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jPL-bU-bBY">
-                                <rect key="frame" x="72" y="19" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ranveer.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jPL-bU-bBY">
+                                <rect key="frame" x="63.5" y="19" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="c3Z-ll-ZCz"/>
-                                    <constraint firstAttribute="height" constant="100" id="nU1-c6-JCL"/>
+                                    <constraint firstAttribute="width" constant="100" id="Fdg-Kc-u2u"/>
+                                    <constraint firstAttribute="height" constant="100" id="jPL-lJ-hKX"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="FGH-pC-Hxm" firstAttribute="top" secondItem="jPL-bU-bBY" secondAttribute="bottom" constant="12" id="1BD-ij-Lsg"/>
+                            <constraint firstAttribute="trailing" secondItem="jPL-bU-bBY" secondAttribute="trailing" constant="63.5" id="1Q1-t7-BQK"/>
                             <constraint firstAttribute="trailing" secondItem="FGH-pC-Hxm" secondAttribute="trailing" constant="8" id="2TD-ov-ukS"/>
-                            <constraint firstItem="jPL-bU-bBY" firstAttribute="top" secondItem="foE-JP-Tjd" secondAttribute="top" constant="15" id="6vM-EF-0wq"/>
+                            <constraint firstItem="jPL-bU-bBY" firstAttribute="leading" secondItem="foE-JP-Tjd" secondAttribute="leading" constant="63.5" id="35A-UM-5sv"/>
+                            <constraint firstItem="FGH-pC-Hxm" firstAttribute="top" secondItem="jPL-bU-bBY" secondAttribute="bottom" constant="8" id="79E-QC-Vbt"/>
                             <constraint firstAttribute="trailing" secondItem="0BD-Zm-dXk" secondAttribute="trailing" constant="8" id="KzO-a7-xQS"/>
                             <constraint firstItem="tis-OP-cxb" firstAttribute="top" secondItem="FGH-pC-Hxm" secondAttribute="bottom" constant="8" symbolic="YES" id="QUQ-TD-lAK"/>
                             <constraint firstItem="S3t-AB-OZM" firstAttribute="leading" secondItem="foE-JP-Tjd" secondAttribute="leading" constant="32" id="Zho-Ll-7MU"/>
                             <constraint firstAttribute="trailing" secondItem="S3t-AB-OZM" secondAttribute="trailing" constant="32" id="a7V-Tr-BsV"/>
                             <constraint firstItem="S3t-AB-OZM" firstAttribute="top" secondItem="0BD-Zm-dXk" secondAttribute="bottom" constant="15" id="d2D-EZ-zm3"/>
                             <constraint firstItem="FGH-pC-Hxm" firstAttribute="leading" secondItem="foE-JP-Tjd" secondAttribute="leading" constant="8" id="deE-H3-PzY"/>
-                            <constraint firstItem="jPL-bU-bBY" firstAttribute="centerX" secondItem="foE-JP-Tjd" secondAttribute="centerX" id="e79-Mc-psw"/>
                             <constraint firstItem="tis-OP-cxb" firstAttribute="leading" secondItem="foE-JP-Tjd" secondAttribute="leading" constant="8" id="h4j-fr-8Lt"/>
                             <constraint firstItem="0BD-Zm-dXk" firstAttribute="leading" secondItem="foE-JP-Tjd" secondAttribute="leading" constant="8" id="ial-CI-eRX"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="S3t-AB-OZM" secondAttribute="bottom" constant="12" id="nBo-eQ-nHP"/>
+                            <constraint firstItem="jPL-bU-bBY" firstAttribute="top" secondItem="foE-JP-Tjd" secondAttribute="top" constant="19" id="tHd-jF-ty7"/>
                             <constraint firstItem="0BD-Zm-dXk" firstAttribute="top" secondItem="tis-OP-cxb" secondAttribute="bottom" constant="14.5" id="td5-bD-FDu"/>
                             <constraint firstAttribute="trailing" secondItem="tis-OP-cxb" secondAttribute="trailing" constant="8" id="uYb-eI-48W"/>
                         </constraints>
@@ -84,11 +85,11 @@
             </constraints>
             <size key="customSize" width="227" height="264"/>
             <connections>
-                <outlet property="Ranveer" destination="jPL-bU-bBY" id="qzX-35-vhh"/>
-                <outlet property="bprofile" destination="0BD-Zm-dXk" id="LQL-3G-ats"/>
-                <outlet property="followbtn" destination="S3t-AB-OZM" id="UQl-y6-dZ3"/>
-                <outlet property="jobprofession" destination="tis-OP-cxb" id="NL1-QP-Xuw"/>
-                <outlet property="pname" destination="FGH-pC-Hxm" id="kqU-Ed-eZa"/>
+                <outlet property="bprofileLabel" destination="0BD-Zm-dXk" id="hPB-TJ-U2M"/>
+                <outlet property="followButton" destination="S3t-AB-OZM" id="1DZ-fe-nL2"/>
+                <outlet property="jobLabel" destination="tis-OP-cxb" id="R88-8j-0zd"/>
+                <outlet property="nameLabel" destination="FGH-pC-Hxm" id="yvt-JI-pcs"/>
+                <outlet property="profileImageView" destination="jPL-bU-bBY" id="L22-af-cB0"/>
             </connections>
             <point key="canvasLocation" x="-105" y="43"/>
         </collectionViewCell>

@@ -154,11 +154,13 @@
                         <outlet property="Addsection" destination="ZmY-wl-RIu" id="t7S-q9-b87"/>
                         <outlet property="Image" destination="ZUN-ad-mzz" id="H5m-wh-yxg"/>
                         <outlet property="Opento" destination="Vkk-BV-wfh" id="mtp-8J-F16"/>
+                        <outlet property="address" destination="deF-sR-EuR" id="gKu-Uo-F3m"/>
+                        <outlet property="username" destination="KzY-Ve-h4e" id="uuQ-Jx-N7d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="223.98800599700152"/>
+            <point key="canvasLocation" x="532" y="366"/>
         </scene>
         <!--NetworkVC-->
         <scene sceneID="00f-gc-oW4">

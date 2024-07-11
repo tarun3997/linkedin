@@ -1,65 +1,74 @@
-//
-//  Network_VC.swift
-//  linkedin
-//
-//  Created by Apple 3 on 15/06/24.
-//
-
 import UIKit
+import FirebaseFirestore
+import Kingfisher
+
 
 class Network_VC: UIViewController {
 
     @IBOutlet weak var collection_view: UICollectionView!
     
-    let imageArr = [UIImage(named: "Ranveer.jpeg"),UIImage(named: "lordshiva.jpeg"),UIImage(named: "rathore.jpeg"),UIImage(named: "birds.jpeg"),]
-    let nameArr = ["Ranveer", "Digvijay","Saurabh","Rahul"]
-    let jobArr = ["Human Resources", "Directing Manager","RRB po","engineer"]
-    let bpprofileArr = ["based on your profile","based on your profile","based on your profile","based on your profile"]
-        override func viewDidLoad() {
-        super.viewDidLoad()
-            
- 
-    
-  self.collection_view.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
-            collection_view.collectionViewLayout = UICollectionViewFlowLayout ()
-    }
+    var profiles: [Profile] = []
     
 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Register collection view cell if not already registered
+        self.collection_view.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
+        collection_view.collectionViewLayout = UICollectionViewFlowLayout()
+        
+        // Fetch profiles from Firestore
+        fetchProfiles()
+    }
+    
+    func fetchProfiles() {
+        let db = Firestore.firestore()
+        
+        db.collection("users").getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let data = document.data()
+                    let name = data["name"] as? String ?? ""
+                    let job = data["userField"] as? String ?? ""
+                    let imageUrl = data["userProfileImg"] as? String ?? ""
+                    let bprofile = data["userField"] as? String ?? ""
+                    let uid = document.documentID
+                    // Using document ID as UID
+                    
+                    let profile = Profile(name: name, job: job, imageUrl: imageUrl, bprofile: bprofile, uid: uid)
+                    self.profiles.append(profile)
+                }
+                
+                DispatchQueue.main.async {
+                    self.collection_view.reloadData()
+                }
+            }
+        }
+    }
 }
-extension Network_VC: UICollectionViewDelegate, UICollectionViewDataSource{
+
+extension Network_VC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.imageArr.count
+        return self.profiles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = self.collection_view.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         
-            
-      
+        let profile = profiles[indexPath.row]
+        cell.configure(with: profile.imageUrl, name: profile.name, job: profile.job, bprofile: profile.bprofile)
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 15
-        cell.Ranveer.layer.cornerRadius = 50
-
-        cell.Ranveer.image = self.imageArr[indexPath.row]
-        cell.pname.text = self.nameArr[indexPath.row]
-        cell.jobprofession.text = self.jobArr[indexPath.row]
-        cell.bprofile.text = self.bpprofileArr[indexPath.row]
-        
         return cell
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
+        vc.uid = profiles[indexPath.row].uid  // Pass uid to ProfileVC
         self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    }
-    
-extension Network_VC: UICollectionViewDelegateFlowLayout {
-    
-   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 1.8, left: 3.0, bottom: 1.0, right: 8.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -70,5 +79,22 @@ extension Network_VC: UICollectionViewDelegateFlowLayout {
     }
 }
 
+struct Profile {
+    let name: String
+    let job: String
+    let imageUrl: String
+    let bprofile: String
+    let uid: String
+    
+    // Add uid as a property
 
+    // Optionally, you might want to add an initializer to handle the new property:
+    init(name: String, job: String, imageUrl: String, bprofile: String, uid: String) {
+        self.name = name
+        self.job = job
+        self.imageUrl = imageUrl
+        self.bprofile = bprofile
+        self.uid = uid
+    }
+}
 
