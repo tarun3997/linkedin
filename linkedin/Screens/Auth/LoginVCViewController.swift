@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginVCViewController: UIViewController {
 
@@ -33,22 +34,27 @@ class LoginVCViewController: UIViewController {
             let email = self.TF_Email.text!
             let password = self.TF_Password.text!
             
-            if email.isEmpty {
-                showAlert(message: "Please enter your email.")
-                return
+        if email.isEmpty || password.isEmpty {
+                    showAlert(message: "Please enter both email & passord.")
+                    return
+                }
+
+                Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+                    if let error = error {
+                        print("Error logging in: \(error.localizedDescription)")
+                        self.showAlert(message: "Error logging in. Please check your credentials and try again.")
+                        return
+                    }
+
+                    // User successfully logged in
+                    print("Login successful!")
+                    // Example: Navigate to another view controller upon successful login
+                    // self.performSegue(withIdentifier: "LoggedInSegue", sender: nil)
+
+                    // Optionally save user email to UserDefaults
+                    UserDefaults.standard.setValue(email, forKey: "email")
+                }
             }
-            
-            if password.isEmpty {
-                showAlert(message: "Please enter your password.")
-                return
-            }
-        
-        result = email
-        print(result ?? "")
-        
-        
-            print("Login Success")
-        }
     
     @IBAction func BT_ForgotPassword(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name: "Auth", bundle: nil)
@@ -73,10 +79,8 @@ class LoginVCViewController: UIViewController {
             alertController.addAction(okAction)
             present(alertController, animated: true, completion: nil)
         }
-    
-    
-    
-}
+
+    }
 
 extension UIViewController {
     
