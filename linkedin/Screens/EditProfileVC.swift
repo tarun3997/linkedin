@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class EditProfileVC: UIViewController {
 
@@ -32,49 +34,65 @@ class EditProfileVC: UIViewController {
 
     @IBOutlet weak var TF_City: UITextField!
     
+    @IBOutlet weak var TF_Profession: UITextField!
     
     
-    @IBAction func actSaveBtn(_ sender: UIButton){
+    @IBAction func actSaveBtn(_ sender: UIButton) {
         guard let fname = TF_Firstname.text, !fname.isEmpty else {
             showAlert(message: "Please enter your first name.")
             return
         }
-        print(self.TF_Firstname.text!)
-        
         guard let lname = TF_Lastname.text, !lname.isEmpty else {
             showAlert(message: "Please enter your last name.")
             return
         }
-        print(self.TF_Lastname.text!)
-        
         guard let aname = TF_Addname.text, !aname.isEmpty else {
             showAlert(message: "Please enter your additional name.")
             return
         }
-        print(self.TF_Addname.text!)
-        
         guard let ed = TF_Education.text, !ed.isEmpty else {
             showAlert(message: "Please enter your education.")
             return
         }
-        print(self.TF_Education.text!)
-        
         guard let city = TF_City.text, !city.isEmpty else {
             showAlert(message: "Please enter your city.")
             return
         }
-        print(self.TF_City.text!)
-      
-        print("Profile Edit Successfully")
-
+        guard let pro = TF_Profession.text, !pro.isEmpty else {
+            showAlert(message: "Please enter your profession.")
+            return
+        }
+        
+  
+        let db = Firestore.firestore()
+        let userId = "bqx3zm78Q9NHCQ5LZLvHO4DMDYN2"
+        
+        let userRef = db.collection("users").document(userId)
+        
+        userRef.updateData([
+            "name": fname,
+            "username": lname,
+            "MobileNumber": aname,
+            "Education": ed,
+            "userFiled":pro,
+            "City": city
+            
+        ]) { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+            } else {
+                print("Document successfully updated")
+                DispatchQueue.main.async {
+                    print("Profile Updated successfully")
+                }
+            }
+        }
     }
+
 
     func showAlert(message: String) {
         let alert = UIAlertController(title: "Validation Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    
-    
-
 }
