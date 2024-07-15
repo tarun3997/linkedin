@@ -15,8 +15,6 @@ class LoginVCViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
 
@@ -31,34 +29,32 @@ class LoginVCViewController: UIViewController {
     
     
     @IBAction func BT_Login(_ sender: UIButton) {
-            let email = self.TF_Email.text!
-            let password = self.TF_Password.text!
-            
-        if email.isEmpty || password.isEmpty {
-                    showAlert(message: "Please enter both email & passord.")
-                    return
-                }
-
-                Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
-                    if let error = error {
-                        print("Error logging in: \(error.localizedDescription)")
-                        self.showAlert(message: "Error logging in. Please check your credentials and try again.")
-                        return
-                    }
-
-                    // User successfully logged in
-                    print("Login successful!")
-                    // Example: Navigate to another view controller upon successful login
-                    // self.performSegue(withIdentifier: "LoggedInSegue", sender: nil)
-
-                    // Optionally save user email to UserDefaults
-                    UserDefaults.standard.setValue(email, forKey: "email")
-                }
+        guard let email = TF_Email.text, !email.isEmpty else {
+            showAlert(message: "Please enter both email & password.")
+            return
+        }
+        
+        guard let password = TF_Password.text, !password.isEmpty else {
+            showAlert(message: "Please enter both email & password.")
+            return
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+            if let error = error {
+                print("Error logging in: \(error.localizedDescription)")
+                self.showAlert(message: "Error logging in. Please check your credentials and try again.")
+                return
             }
+            
+            print("Login successful!")
+            UserDefaults.standard.setValue(email, forKey: "email")
+        }
+    }
+
     
     @IBAction func BT_ForgotPassword(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name: "Auth", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "LoginVCViewController") as! LoginVCViewController
+        let vc = storyBoard.instantiateViewController(identifier: "ForgotVC") as! ForgotVC
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
@@ -67,9 +63,6 @@ class LoginVCViewController: UIViewController {
         let storyBoard = UIStoryboard(name: "Auth", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: "SignupVC") as! SignupVC
         self.navigationController?.pushViewController(vc, animated: true)
-        
-    
-        
         
     }
     

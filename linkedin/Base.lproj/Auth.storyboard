@@ -87,7 +87,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="BT_ForgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ouu-dk-MyS"/>
-                                            <action selector="BT_Register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gby-fO-J76"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jJ-6H-kKw">
@@ -318,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbL-dX-zDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605.5999999999999" y="-667.01649175412297"/>
+            <point key="canvasLocation" x="2623" y="-672"/>
         </scene>
         <!--Detail PageVC-->
         <scene sceneID="3fH-C5-i4j">
@@ -436,6 +435,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="BT_Cancel:" destination="Edr-3Y-8H6" eventType="touchUpInside" id="vbM-oR-yfE"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-Y9-hao">
                                         <rect key="frame" x="16" y="422" width="341" height="38"/>
@@ -530,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jii-Xg-Rfx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3324.8000000000002" y="-668.36581709145435"/>
+            <point key="canvasLocation" x="3315" y="-589"/>
         </scene>
         <!--ForgotVC-->
         <scene sceneID="GW8-UX-WLI">

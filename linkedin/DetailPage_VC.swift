@@ -29,18 +29,29 @@ class DetailPage_VC: UIViewController {
     @IBOutlet weak var TF_Profession: UITextField!
     @IBOutlet weak var TF_City: UITextField!
     
-    @IBAction func BT_Save(_ sender: UIButton) {
-        if validateFields() {
-            guard let uid = UserDefaults.standard.string(forKey: "uid") else {
-                print("UID not found in UserDefaults.")
-                return
-            }
-            
-            uploadImageAndSaveData(uid: uid)
-        } else {
-            print("Validation failed. Please check the entered data.")
-        }
+    
+    
+    @IBAction func BT_Cancel(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+        
     }
+    
+    
+    @IBAction func BT_Save(_ sender: UIButton) {
+        guard validateFields() else {
+            print("Validation failed. Please check the entered data.")
+            return
+        }
+        
+        guard let uid = UserDefaults.standard.string(forKey: "uid") else {
+            print("UID not found in UserDefaults.")
+            return
+        }
+        
+        uploadImageAndSaveData(uid: uid)
+    }
+
     
     func validateFields() -> Bool {
         return true
@@ -64,27 +75,23 @@ class DetailPage_VC: UIViewController {
         
         let storageRef = Storage.storage().reference().child("profile_images/\(uid).jpg")
         
-        // Convert the image to Data format
         guard let imageData = image.jpegData(compressionQuality: 0.5) else {
             print("Failed to convert image to Data format.")
             return
         }
         
-        // Upload the image to Firebase Storage
         storageRef.putData(imageData, metadata: nil) { (metadata, error) in
             if let error = error {
                 print("Error uploading profile image:", error.localizedDescription)
                 return
             }
             
-            // Once the image is uploaded, get the download URL
             storageRef.downloadURL { (url, error) in
                 guard let downloadURL = url else {
                     print("Failed to get download URL:", error?.localizedDescription ?? "Unknown error")
                     return
                 }
                 
-                // Save user details including the profile image URL to Firestore
                 self.saveUserData(uid: uid, profileImageURL: downloadURL.absoluteString)
             }
         }

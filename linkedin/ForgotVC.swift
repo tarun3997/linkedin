@@ -12,7 +12,6 @@ class ForgotVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -24,40 +23,35 @@ class ForgotVC: UIViewController {
     @IBOutlet weak var TF_ConfirmPassword: UITextField!
     
     @IBAction func BT_RecoverNow(_ sender: UIButton) {
-            let email = TF_Email.text ?? ""
-            let password = TF_NewPassword.text ?? ""
-            let confirmPassword = TF_ConfirmPassword.text ?? ""
+        let email = TF_Email.text ?? ""
+        let password = TF_NewPassword.text ?? ""
+        let confirmPassword = TF_ConfirmPassword.text ?? ""
+        
+        guard isValidEmail(email) else {
+            showAlert(title: "Invalid Email", message: "Please enter a valid email address.")
+            return
+        }
+        
+        guard isValidPassword(password) else {
+            showAlert(title: "Invalid Password", message: "Password must be at least 8 characters long.")
+            return
+        }
+        
+        guard password == confirmPassword else {
+            showAlert(title: "Passwords Mismatch", message: "Passwords do not match. Please re-enter your password.")
+            return
+        }
+        
+        print("Password reset successful")
+    }
 
-        // Validate email format
-               if !isValidEmail(email) {
-                   showAlert(title: "Invalid Email", message: "Please enter a valid email address.")
-                   return
-               }
-
-               // Validate password
-               if !isValidPassword(password) {
-                   showAlert(title: "Invalid Password", message: "Password must be at least 8 characters long.")
-                   return
-               }
-
-               // Check if passwords match
-               guard password == confirmPassword else {
-                   showAlert(title: "Passwords Mismatch", message: "Passwords do not match. Please re-enter your password.")
-                   return
-               }
-
-               // Password reset logic can be implemented here
-               print("Password reset successful")
-           }
 
            func isValidEmail(_ email: String) -> Bool {
-               // Regular expression for basic email validation
                let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
                return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
            }
 
            func isValidPassword(_ password: String) -> Bool {
-               // Password criteria: at least 8 characters
                return password.count >= 8
            }
 

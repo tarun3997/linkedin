@@ -18,20 +18,9 @@ class SignupVC: UIViewController {
         super.viewDidLoad()
     }
     
-    
-    
-    
-    
     @IBOutlet weak var TF_Email: UITextField!
     
-    
-    
-    
-    
-    
     @IBOutlet weak var TF_CPassword: UITextField!
-    
-    
     
     @IBAction func BT_Welcome(_ sender: UIButton) {
         signup_firebase()
