@@ -1,0 +1,51 @@
+
+/* Class = "UITextField"; placeholder = "Leave your thoughts here..."; ObjectID = "0K3-z9-mOL"; */
+"0K3-z9-mOL.placeholder" = "Leave your thoughts here...";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "0Mg-TI-7F9"; */
+"0Mg-TI-7F9.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "Share your thoughts..."; ObjectID = "2WO-Fn-Q4W"; */
+"2WO-Fn-Q4W.placeholder" = "Share your thoughts...";
+
+/* Class = "UIButton"; configuration.title = "Post"; ObjectID = "6qp-ov-GJt"; */
+"6qp-ov-GJt.configuration.title" = "Post";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6qp-ov-GJt"; */
+"6qp-ov-GJt.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Post"; ObjectID = "9UB-Ku-Usp"; */
+"9UB-Ku-Usp.configuration.title" = "Post";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9UB-Ku-Usp"; */
+"9UB-Ku-Usp.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "D4L-ys-ecx"; */
+"D4L-ys-ecx.text" = "Email";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "DL7-4W-ElE"; */
+"DL7-4W-ElE.text" = "Password";
+
+/* Class = "UIButton"; configuration.title = "Signup"; ObjectID = "E41-Zm-0aV"; */
+"E41-Zm-0aV.configuration.title" = "Signup";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "E41-Zm-0aV"; */
+"E41-Zm-0aV.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Post"; ObjectID = "UIm-bK-1Ph"; */
+"UIm-bK-1Ph.title" = "Post";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "W6H-fP-V8n"; */
+"W6H-fP-V8n.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "W6H-fP-V8n"; */
+"W6H-fP-V8n.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "b2w-jW-dia"; */
+"b2w-jW-dia.title" = "Item";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "eJS-NV-399"; */
+"eJS-NV-399.text" = "Password";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "jJk-75-XHJ"; */
+"jJk-75-XHJ.text" = "Email";
